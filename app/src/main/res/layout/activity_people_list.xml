@@ -39,7 +39,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:itemCount="10"
-                tools:listitem="@layout/item_character" />
+                tools:listitem="@layout/item_people" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
