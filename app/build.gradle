@@ -48,7 +48,7 @@ ext {
     koinVersion = '3.2.1'
     coroutinesVersion = '1.6.4'
     shimmer = '0.5.0'
-    androidx = '1.9.0'
+    androidx = '1.8.0'
     appCompat = '1.5.1'
     constraintLayout = '2.1.4'
     googleMaterial = '1.6.1'

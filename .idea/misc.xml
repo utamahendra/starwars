@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable/shape_circle_grey_80.xml" value="0.222" />
         <entry key="app/src/main/res/layout/activity_user_list.xml" value="0.22056159420289856" />
+        <entry key="app/src/main/res/layout/view_error.xml" value="0.15625" />
       </map>
     </option>
   </component>
