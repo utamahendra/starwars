@@ -6,42 +6,42 @@
     android:layout_height="wrap_content">
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_id"
+        android:id="@+id/tv_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="12dp"
         android:layout_marginStart="12dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/iv_user"
-        app:layout_constraintTop_toTopOf="@id/iv_user"
-        tools:text="1" />
+        app:layout_constraintStart_toEndOf="@id/iv_people"
+        app:layout_constraintTop_toTopOf="@id/iv_people"
+        tools:text="Luke Skywalker" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_username"
+        android:id="@+id/tv_height"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="12dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/iv_user"
-        app:layout_constraintTop_toBottomOf="@id/tv_id"
-        tools:text="username" />
+        app:layout_constraintStart_toEndOf="@id/iv_people"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        tools:text="172cm" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_repo"
+        android:id="@+id/tv_mass"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="12dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/iv_user"
-        app:layout_constraintTop_toBottomOf="@id/tv_username"
-        tools:text="repo" />
+        app:layout_constraintStart_toEndOf="@id/iv_people"
+        app:layout_constraintTop_toBottomOf="@id/tv_height"
+        tools:text="77kg" />
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/iv_user"
+        android:id="@+id/iv_people"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginStart="12dp"

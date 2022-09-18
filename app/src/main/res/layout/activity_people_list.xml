@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/srl_users"
+        android:id="@+id/srl_peoples"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,7 +30,7 @@
             android:paddingTop="8dp">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_users"
+                android:id="@+id/rv_peoples"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
@@ -46,7 +46,7 @@
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     <com.facebook.shimmer.ShimmerFrameLayout
-        android:id="@+id/sfl_users"
+        android:id="@+id/sfl_peoples"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:visibility="gone"
@@ -60,11 +60,11 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <include layout="@layout/view_shimmer_users" />
+            <include layout="@layout/view_shimmer_peoples" />
 
-            <include layout="@layout/view_shimmer_users" />
+            <include layout="@layout/view_shimmer_peoples" />
 
-            <include layout="@layout/view_shimmer_users" />
+            <include layout="@layout/view_shimmer_peoples" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

@@ -12,7 +12,7 @@ class PeopleListViewModel(private val peopleUseCase: PeopleUseCase) : ViewModel(
 
     val peopleState = MutableLiveData<ViewState<List<PeopleData>>>()
 
-    fun getUserDetail(username: String) {
+    fun getPeoples() {
         viewModelScope.launch {
             peopleState.postValue(ViewState.Loading())
             peopleUseCase.invoke(Unit).handleResult({ userDetailData ->

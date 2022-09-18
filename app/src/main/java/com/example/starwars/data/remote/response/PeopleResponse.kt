@@ -2,7 +2,7 @@ package com.example.starwars.data.remote.response
 
 import com.google.gson.annotations.SerializedName
 
-data class PeopleResponse(val results: People)
+data class PeopleResponse(val results: List<People>)
 
 data class People(
     val name: String,

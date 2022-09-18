@@ -6,5 +6,5 @@ import retrofit2.http.GET
 interface PeopleApiService {
 
     @GET("people")
-    suspend fun getPeople(): List<PeopleResponse>
+    suspend fun getPeople(): PeopleResponse
 }
