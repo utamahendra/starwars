@@ -6,4 +6,5 @@ interface PeopleDataSource {
 
     suspend fun getPeople(): PeopleResponse
 
+    suspend fun getSearchByPeople(keyword: String): PeopleResponse
 }

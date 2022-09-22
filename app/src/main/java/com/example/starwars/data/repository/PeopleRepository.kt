@@ -7,4 +7,6 @@ import com.example.starwars.domain.source.PeopleDataSource
 class PeopleRepository(private val apiService: PeopleApiService) : PeopleDataSource {
 
     override suspend fun getPeople(): PeopleResponse = apiService.getPeople()
+
+    override suspend fun getSearchByPeople(keyword: String): PeopleResponse = apiService.getPeople(keyword)
 }

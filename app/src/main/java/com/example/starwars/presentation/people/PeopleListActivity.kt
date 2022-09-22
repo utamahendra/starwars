@@ -28,7 +28,7 @@ class PeopleListActivity : BaseActivity() {
         initView()
         initListener()
         startObservingData()
-        viewModel.getPeoples()
+        viewModel.getPeoplesBySearch("r2")
     }
 
     private fun initView() {
@@ -53,6 +53,25 @@ class PeopleListActivity : BaseActivity() {
 
     private fun startObservingData() {
         viewModel.peopleState.observe(this) { state ->
+            when (state) {
+                is ViewState.Loading -> {
+                    hideError()
+                    showLoading()
+                }
+
+                is ViewState.Error -> {
+                    hideLoading()
+                    showError(state.viewError?.errorCode.toString()) { viewModel.getPeoples() }
+                }
+
+                is ViewState.Success -> {
+                    hideLoading()
+                    showPeoples(state.data)
+                }
+            }
+        }
+
+        viewModel.peopleSearchState.observe(this) { state ->
             when (state) {
                 is ViewState.Loading -> {
                     hideError()
